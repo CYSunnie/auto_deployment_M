@@ -1,0 +1,53 @@
+
+jsddj/topo>
+>
+	<networkInfo>
+		<network>
+			<name>net111</name>
+			<networkIp>10.0.111.0/24</networkIp>
+		</network>
+		<network>
+			<name>net222</name>
+			<networkIp>10.0.222.0/24</networkIp>
+		</network>
+		<network>
+			<name>net233</name>
+			<networkIp>10.0.233.0/24</networkIp>
+		</network>
+	</networkInfo>
+	<routerInfo>
+		<router>
+			<name>router1</name>
+			<image>Router_3NIC_OSPF_reset</image>
+			<flavor>m1.medium</flavor>
+			<networkname>net111</networkname>
+			<networkname>net222</networkname>
+			<az>compute1</az>
+		</router>
+		<router>
+			<name>router2</name>
+			<image>Router_3NIC_OSPF_reset</image>
+			<flavor>m1.medium</flavor>
+			<networkname>net222</networkname>
+			<networkname>net233</networkname>
+			<az>compute1</az>
+		</router>
+	</routerInfo>
+	<instanceInfo>
+		<instance>
+			<name>A</name>
+			<image>CENTOS7.2</image>
+			<flavor>m1.small</flavor>
+			<networkname>net111</networkname>
+			<az>compute1</az>
+		</instance>
+		<instance>
+			<name>B</name>
+			<image>CENTOS7.2</image>
+			<flavor>m1.small</flavor>
+			<networkname>net233</networkname>
+			<az>compute1</az>
+		</instance>
+	</instanceInfo>
+</topo>
+
